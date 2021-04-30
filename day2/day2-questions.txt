@@ -1,0 +1,12 @@
+1.  Practice Run and stop the container.
+
+2.  https://github.com/suez-canal-stack/DockerVM/tree/main/Day2 - refer for the following questions
+
+3.  What port is the web application run within the container?
+    port=8080
+
+4.  Build a docker image using the Dockerfile and name it webapp. (docker build . -t webapp).
+
+5.  Run an instance of the image webapp and publish port 8080 on the container to 8282 on the host.
+
+6.  Create a Jenkins docker container and load the page. Write a dockerfile to run the app in 8080 port.
