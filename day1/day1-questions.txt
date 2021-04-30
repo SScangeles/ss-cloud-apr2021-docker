@@ -1,0 +1,14 @@
+1.	How many images are in vm?
+    There are 2 images: ubuntu and nginx
+
+2.	What is the size of Ubuntu image?
+    72.2MB
+
+3.	What is the image tag of nginx image?
+    133MB
+
+4.	What is the base image from the Dockerfile?
+    python:3.6
+
+5.	To what location within the container is the application code copied to during a Docker build? Refer Dockerfile.
+    /opt
