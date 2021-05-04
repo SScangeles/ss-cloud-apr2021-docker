@@ -1,0 +1,14 @@
+1.  Create a docker account and push an image
+    christianangeles/my-ubunut:latest
+
+2.  What location are the files related to the docker containers and images stored?
+    The overlay2 directory contains the layers for images and containers.
+    /var/lib/docker/overlay2
+
+3.  What is cpu share in container and what is default?
+    A proportion of CPU cycles allocated for a container. The default weight is 1024.
+
+4.  What command to use the share of CPU cycles for containers?
+    docker run --cpu-shares="<relative weight to default>" <image> <CMD>
+
+5.  Provide a screen shot of running a Ubuntu container which copies a simple shell script(echo "hello world") from host and executes inside the container. [Use docker volume bind]
