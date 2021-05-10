@@ -11,4 +11,4 @@ RUN cd /home/boss-user-service && mvn -q clean package
 
 FROM openjdk as stage2
 COPY --from=stage1 /home/boss-user-service /home/boss-user-service
-RUN cd /home/boss-user-service/boss-user/target && java -jar boss-user-0.0.1-SNAPSHOT.jar
+CMD java -jar /home/boss-user-service/boss-user/target/boss-user-0.0.1-SNAPSHOT.jar
