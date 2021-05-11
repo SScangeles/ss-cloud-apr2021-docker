@@ -1,7 +1,20 @@
-version: "3.9"
 services:
     user-service:
-        build: ./
+        build: ./user-service
         image: user-service
+        expose:
+            - "8080"
+        networks:
+            - boss-net
+    public-ui:
+        build: ./public-ui
+        image: public-ui
+        expose:
+            - "8080"
         ports:
-            - 80:8080
+            - 80:4200
+        networks:
+            - boss-net
+
+networks:
+    boss-net:
