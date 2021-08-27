@@ -19,7 +19,7 @@ pipeline {
     }
     post {
         cleanup {
-            echo "Post cleanup"
+            echo "Post actions"
         }
     }
 }
