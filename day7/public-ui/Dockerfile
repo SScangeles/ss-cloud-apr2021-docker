@@ -2,7 +2,7 @@ FROM ubuntu as stage0
 RUN apt -y update && \
     apt -y install git && \
     cd /home && git clone https://github.com/SSOrphans/boss-public-ui.git && \
-    cd boss-public-ui && git switch dev
+    cd boss-public-ui && git switch demo/ecs-test
 
 FROM node
 COPY --from=stage0 /home/boss-public-ui /home/boss-public-ui
